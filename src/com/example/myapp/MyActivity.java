@@ -124,6 +124,7 @@ public class MyActivity extends Activity {
             public void onSwipeEnd(int position) {
                 // swipe end
             }
+
         });
 
         // other setting
