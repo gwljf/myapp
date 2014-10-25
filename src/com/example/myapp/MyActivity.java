@@ -204,11 +204,11 @@ public class MyActivity extends Activity {
             ScanResult item = getItem(position);
             int level = item.level;
             if(level>-50){
-                holder.wifi_icon.setImageResource(R.drawable.ic_action_good);
+                holder.wifi_icon.setImageResource(R.drawable.wifi_green);
             }else if(level<= -50 && level>-75){
-                holder.wifi_icon.setImageResource(R.drawable.ic_action_important);
+                holder.wifi_icon.setImageResource(R.drawable.wifi_yellow);
             }else {
-                holder.wifi_icon.setImageResource(R.drawable.ic_action_about);
+                holder.wifi_icon.setImageResource(R.drawable.wifi_red);
             }
             holder.wifi_name.setText((CharSequence) item.SSID+" "+item.level);
 
